@@ -65,6 +65,7 @@
     "disableableCredentialTypes" : [ ],
     "requiredActions" : [ "UPDATE_PASSWORD" ],
     "notBefore" : 0,
+    "realmRoles" : [ "default-roles-learning" ],
     "groups" : [ ]
   }, {
     "id" : "f826fc2c-a3ee-4c41-ae7e-51f3654858da",
