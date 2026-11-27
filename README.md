@@ -19,11 +19,14 @@ Keycloak と Spring Boot の学習用プロジェクト
 開発向け起動手順
 --------------------------------------------------------------------------------
 
-手順 1. 依存サーバー群を起動
+手順 1. API をビルドしてサーバー群を起動
 
 ```bash
-docker compose up -d
+./mvnw -pl api -am package
+docker compose up -d --build
 ```
+
+API の Docker イメージは `api/target` のビルド済み JAR を使用します。API を変更した場合は、再度ビルドしてから `docker compose up -d --build api` を実行してください。
 
 初回起動時、`keycloak/export` の realm とユーザーの設定がインポートされます。
 Keycloak の起動には時間がかかる場合があります。状態は次のコマンドで確認できます。
@@ -43,9 +46,10 @@ docker compose logs -f keycloak
 `keycloak/export` には `user01` と `user02` が含まれます。パスワードは export 時点の状態に従います。
 この設定と認証情報はローカル学習用であり、本番環境には使用しないでください。
 
-手順 3. アプリケーションを起動
+手順 3. API にアクセス
 
-TODO: アプリケーションの実装後に、ビルド・起動・Keycloak 連携の手順を追記する。
+API の URL は http://localhost:8080 です。Keycloak へのアクセスは http://localhost:8000 に統一してください。API はこの URL を token の issuer として検証し、公開鍵は Compose ネットワーク内の Keycloak から取得します。
+API エンドポイントや認可の設定は今後実装します。
 
 終了する場合は以下を実行します。コンテナを削除して新たに起動すると、DB は初期化され、export されていない変更は引き継がれません。
 
