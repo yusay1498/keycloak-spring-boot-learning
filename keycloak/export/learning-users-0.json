@@ -1,0 +1,90 @@
+{
+  "realm" : "learning",
+  "users" : [ {
+    "id" : "55cda490-837b-4fcd-8a06-ce8280ccfb70",
+    "username" : "enome",
+    "firstName" : "enome",
+    "email" : "enome@immoral-guild.com",
+    "emailVerified" : false,
+    "enabled" : true,
+    "createdTimestamp" : 1795764602553,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "uma_authorization", "offline_access", "default-roles-learning" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "6f15a56f-91eb-4922-8052-11c85c335af6",
+    "username" : "hitamuki",
+    "firstName" : "hitamu",
+    "lastName" : "kyan",
+    "email" : "hitamu_kyan@immoral-guild.com",
+    "emailVerified" : false,
+    "enabled" : true,
+    "createdTimestamp" : 1795764505513,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-learning" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "a53314d1-bb2f-43f9-bb90-12db9793d0d5",
+    "username" : "kikuru",
+    "firstName" : "kikuru",
+    "lastName" : "madan",
+    "email" : "kikuru_madan@immoral-guild.com",
+    "emailVerified" : false,
+    "enabled" : true,
+    "createdTimestamp" : 1795764299681,
+    "totp" : false,
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "uma_authorization", "offline_access", "default-roles-learning" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "72a948ff-c8d9-47e8-b11f-f84168ab1569",
+    "username" : "user01",
+    "email" : "user01@localhost.com",
+    "emailVerified" : false,
+    "enabled" : true,
+    "createdTimestamp" : 1795759910080,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "4ac25b8a-f648-4930-b59b-d54e6eaeb1b2",
+      "type" : "password",
+      "createdDate" : 1795759910146,
+      "secretData" : "{\"value\":\"2V3sFK/bpyhADd6Z5vwAOBb/iAKpu9jCEFIz68ZOhWQ=\",\"salt\":\"tAUQM6BkltFswNXV/H0XrA==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ "UPDATE_PASSWORD" ],
+    "notBefore" : 0,
+    "realmRoles" : [ "default-roles-learning" ],
+    "groups" : [ ]
+  }, {
+    "id" : "f826fc2c-a3ee-4c41-ae7e-51f3654858da",
+    "username" : "user02",
+    "email" : "user02@localhost.com",
+    "emailVerified" : false,
+    "enabled" : true,
+    "createdTimestamp" : 1795759910154,
+    "totp" : false,
+    "credentials" : [ {
+      "id" : "53c59af0-1872-4865-ab41-f24cd116c20e",
+      "type" : "password",
+      "createdDate" : 1795759910177,
+      "secretData" : "{\"value\":\"efEzrvJOS6wp1j85MuOdIoPgXkOmMHmagh87rTY+UnQ=\",\"salt\":\"k5vJKkxfFe/nn6poD9wH/w==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":5,\"algorithm\":\"argon2\",\"additionalParameters\":{\"hashLength\":[\"32\"],\"memory\":[\"7168\"],\"type\":[\"id\"],\"version\":[\"1.3\"],\"parallelism\":[\"1\"]}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ "UPDATE_PASSWORD" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
