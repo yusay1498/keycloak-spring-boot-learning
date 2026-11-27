@@ -1,4 +1,16 @@
 services:
+  api:
+    build:
+      context: ./api
+    environment:
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI: http://localhost:8000/realms/learning
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK_SET_URI: http://keycloak:8080/realms/learning/protocol/openid-connect/certs
+    ports:
+      - "8080:8080"
+    depends_on:
+      keycloak:
+        condition: service_started
+
   postgres:
     image: postgres:18
     environment:
